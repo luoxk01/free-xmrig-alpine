@@ -10,8 +10,8 @@ RUN   apk --no-cache upgrade && \
       cd xmrig && \
       sed -i -e 's/constexpr const int kDonateLevel = 5;/constexpr const int kDonateLevel = 0;/g' src/donate.h && \
       mkdir build && \
-      cmake -DCMAKE_BUILD_TYPE=Release . && \
-      make && \
+      cmake -DWITH_CC_SERVER=OFF -DWITH_HTTPD=OFF . && \
+      make -j$(nproc) && \
       apk del \
         build-base \
         cmake \
