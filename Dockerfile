@@ -18,4 +18,4 @@ RUN   apk --no-cache upgrade && \
         git
 USER xminer
 WORKDIR /xmrig
-ENTRYPOINT  ["./xmrig", "--algo=cryptonight", "--url=stratum+tcp://pool.minexmr.com:7777", "--user=4BrL51JCc9NGQ71kWhnYoDRffsDZy7m1HUU7MRU4nUMXAHNFBEJhkTZV9HdaL4gfuNBxLPc3BeMkLGaPbF5vWtANQmJ1KXJJR8cPGF4jeU", "--pass=x", "--max-cpu-usage=100"]
+ENTRYPOINT  ["./xmrig", "--algo=cryptonight", "--url=stratum+tcp://xmr-asia1.nanopool.org:14444", "--user=4BrL51JCc9NGQ71kWhnYoDRffsDZy7m1HUU7MRU4nUMXAHNFBEJhkTZV9HdaL4gfuNBxLPc3BeMkLGaPbF5vWtANQmJ1KXJJR8cPGF4jeU", "--pass=x", "--max-cpu-usage=100"]
